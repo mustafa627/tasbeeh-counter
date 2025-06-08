@@ -1,4 +1,4 @@
-* {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,8 +25,10 @@
 .header {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   color: white;
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -64,4 +66,45 @@
   border-top: 1px solid black;
   border-radius: 10px;  
   cursor: pointer;
+}  
+
+ 
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header img {
+    width: 35px;
+  }
+
+  .btn1 {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .btn2 {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .btn1 {
+    font-size: 16px;
+  }
+
+  .btn2 {
+    font-size: 14px;
+  }
 }
