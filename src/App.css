@@ -13,7 +13,7 @@
   flex-direction: column;
   width: 40%;
   gap: 30px;
-  height:  auto;
+  height:  100%;
   padding: 20px;
 /* background-color:#07305c;
  */
@@ -70,8 +70,21 @@
 
  
 @media (max-width: 480px) {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #07305c;
+}
+
+  .App{
+height: 100vh;
+margin: 0 auto;
+padding: 0;
+  }
   .header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
